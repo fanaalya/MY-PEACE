@@ -1,12 +1,15 @@
 <html>
 <head>
-    <title>Experiences | My Website</title>
+    <title>Experiences | My PEACE</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-    <div class="logo">MyWebsite</div>
+    <header style="display:flex; gap:18px; align-items:center;">
+    <h1 style="font-family:Monaco;">MY</h1>
+    <h1 style="font-family:Brush Script MT;">PEACE</h1>
+</header>
    <nav>
     <a class="nav-btn" href="index.html">Home</a>
     <a class="nav-btn" href="biodata.html">Biodata</a>
@@ -19,14 +22,105 @@
 </header>
 
 <section>
-    <h1>My Experiences</h1>
-    <p>
-        ✦ Internship at ... <br>
-        ✦ Freelance designer ... <br>
-        ✦ Organizer for ... <br>
-        ✦ Many more experiences that shaped my skills.
-    </p>
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .experience-section {
+        max-width: 700px;
+        margin: 0 auto; /* center section */
+        text-align: left;
+    }
+
+    /* Card text */
+    .experience-card {
+        background-color: #f7f7f7;
+        border: 2px solid #92A8D1;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+
+    .experience-card h2 {
+        margin-top: 0;
+        color: #333;
+    }
+
+    .experience-card p {
+        margin: 10px 0;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    /* Gambar bawah */
+    .experience-images {
+        display: flex;
+        justify-content: center; /* center gambar */
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .experience-images img {
+        width: 250px;
+        border-radius: 15px;
+        border: 2px solid #92A8D1;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 768px) {
+        .experience-card {
+            width: 90%;
+            margin: 0 auto 20px auto;
+        }
+        .experience-images {
+            flex-direction: column;
+            align-items: center;
+        }
+        .experience-images img {
+            width: 90%;
+            margin-bottom: 15px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1>My Experiences</h1>
+
+<div class="experience-section">
+    <!-- Card pengalaman -->
+    <div class="experience-card">
+        <h2>Internship</h2>
+        <p>PPD Kuala Muda – Gained valuable work experience and learned administrative skills.</p>
+
+        <h2>Leadership</h2>
+        <p>Ketua Protokol, Kelab Informa – Coordinated events and managed club activities.</p>
+
+        <h2>Volunteer Work</h2>
+        <p>AJK Sukarelawan – Participated in community service and volunteer activities.</p>
+    </div>
+
+    <!-- Gambar bawah -->
+     <div class="experience-images">
+        <img src="aiu.jpg" alt="Aiu">
+        <img src="intern.jpg" alt="Intern">
+        <img src="protokol.jpg" alt="Protokol">
+    </div>
+</div>
+</body>
+</html>
 </section>
+
+<footer>&copy; 2025 —FANA PEACE YO</footer>
+</section>
+
 
 </body>
 </html>

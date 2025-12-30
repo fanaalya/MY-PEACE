@@ -127,3 +127,264 @@ button {
 button:hover {
     background-color: #e64365;
 }
+
+section {
+    padding: 60px 10%;
+}
+
+/* Hero image for each section */
+.hero {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+/* Grid layout for images in each section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.grid-container img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #92A8D1;
+}
+
+/* Text headings */
+h2 {
+    color: #92A8D1;
+    font-size: 30px;
+    border-bottom: 3px solid #F7CAC9;
+    width: fit-content;
+    padding-bottom: 8px;
+}
+
+footer {
+    background: #92A8D1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.container {
+    display: flex;             /* susun kiri-kanan */
+    align-items: center;       /* center vertical */
+    gap: 30px;                 /* jarak gambar & kotak text */
+}
+
+/* Gambar kiri */
+.image-side img {
+    width: 200px;              /* boleh ubah ikut suka */
+    border-radius: 12px;
+    border: 2px solid #92A8D1;
+    object-fit: cover;
+}
+
+/* Kotak text kanan */
+.text-side {
+    flex: 1;                   /* occupy ruang baki */
+}
+
+.text-card {
+    background-color: #f7f7f7;                /* warna kotak */
+    border: 2px solid #92A8D1;               /* border biru lembut */
+    border-radius: 12px;                      /* bucu bulat */
+    padding: 20px;                            /* jarak dalam kotak */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);   /* bayang-bayang halus */
+}
+
+.text-card h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.text-card p {
+    margin: 10px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive untuk mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .text-card {
+        width: 90%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.education-section {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* jarak antara kotak */
+}
+
+.education-card {
+    background-color: #f7f7f7;
+    border: 2px solid #92A8D1;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.education-card h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.education-card p {
+    margin: 10px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .education-section {
+        width: 90%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.family-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;  /* jarak antara gambar & text */
+}
+
+.family-section img {
+    width: 500px;
+    border-radius: 15px;
+    border: 2px solid #92A8D1;
+    object-fit: cover;
+}
+
+.family-section p {
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .family-section img {
+        width: 80%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.gallery-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolum di baris pertama */
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+.gallery-card img {
+    width: 200px;
+    border-radius: 12px;
+    border: 2px solid #92A8D1;
+    object-fit: cover;
+}
+
+.gallery-card p {
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .gallery-section {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolum di tablet/mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-section {
+        grid-template-columns: 1fr; /* 1 kolum di telefon */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.contact-box {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 2px solid #92A8D1;
+    border-radius: 12px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-box p {
+    margin: 15px 0;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.6;
+}
+
+.contact-box a {
+    color: #92A8D1;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
